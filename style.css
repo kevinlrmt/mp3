@@ -1,0 +1,205 @@
+/* IRINA ARG ///////////////////////////////*/
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: black;
+}
+
+/*//// Navbar ////*/
+nav {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding: 2rem;
+	color: #fff;
+	font-family: 'aktiv_grotesk_corpbold', 'Times New Roman', Times, serif, sans-serif;
+}
+
+.nav-links {
+	display: flex;
+	justify-content: space-between;
+	width: 50%;
+}
+
+.nav-links li {
+	list-style: none;
+}
+
+.nav-links li:first-child, .nav-links li:nth-child(2){
+	margin-top:5px;
+}
+
+.nav-links li:last-child {
+	background-color: #448AF7;
+	padding: 6px;
+	border-radius:10px;
+}
+
+.nav-links a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 1.2rem;
+	padding: 1rem;
+}
+  
+.burger {
+	display: none;
+	cursor: pointer;
+}
+
+/*//// Body ////*/
+header {
+	background: linear-gradient(180deg, #101010, #202020);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	color: white;
+}
+#hero .poster{
+	width: 50%;
+
+}
+#hero h1{
+	font-family: 'aktiv_grotesk_corpbold', 'Times New Roman', Times, serif, sans-serif;
+	font-size:20vh;
+	margin-top:0px;
+}
+
+.title{
+	display:flex;
+}
+
+.bubble{
+	margin-top:90px;
+	position: relative;
+	right:-50px;
+	bottom:0px;
+	display:flex;
+	flex-direction: column;
+}
+
+#sidebar{
+	position:fixed;
+	display: flex;
+	flex-direction: column;
+	top:0px;
+	background: linear-gradient(180deg, #101010, #202020);
+	width:90px;
+	height:100vh;
+	border-right: 2px solid white;
+	z-index: 999;
+	vertical-align: top;
+}
+
+#sidebar a{
+	text-align: center;
+}
+
+.button1 {
+	width:50px;
+	height:50px;
+	border-radius:10px;
+	background-color: #448AF7;
+	text-decoration: none;
+	margin-top:10vh;
+}
+.button2 {
+	padding: 10px 20px;
+	background-color: transparent;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	font-size: 1.2em;
+	font-family:'aktiv_grotesk_corpbold', 'Times New Roman', Times, serif;
+}
+
+main {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding: 50px;
+	border-top: 2px solid white;
+	border-bottom: 2px solid white;
+}
+
+section {
+	color:#fff;
+	flex-basis: 100%;
+	padding: 20px;
+}
+
+footer {
+	background-color: black;
+	color: black;
+	text-align: center;
+	padding: 20px;
+}
+
+/*//// Fonts ////*/
+@font-face {
+    font-family: 'aktiv_grotesk_corpbold';
+    src: url('fonts/aktivgroteskcorp-bold-webfont.woff2') format('woff2'),
+         url('fonts/aktivgroteskcorp-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'aktiv_grotesk_corpitalic';
+    src: url('aktivgroteskcorp-italic-webfont.woff2') format('woff2'),
+         url('aktivgroteskcorp-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'aktiv_grotesk_corpbold_italic';
+    src: url('fonts/aktivgroteskcorp-bolditalic-webfont.woff2') format('woff2'),
+         url('fonts/aktivgroteskcorp-bolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'aktiv_grotesk_corpLtIt';
+    src: url('fonts/aktivgroteskcorp-lightitalic-webfont.woff2') format('woff2'),
+         url('fonts/aktivgroteskcorp-lightitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'aktiv_grotesk_corplight';
+    src: url('fonts/aktivgroteskcorp-light-webfont.woff2') format('woff2'),
+         url('fonts/aktivgroteskcorp-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'aktiv_grotesk_corpmedium';
+    src: url('fonts/aktivgroteskcorp-medium-webfont.woff2') format('woff2'),
+         url('fonts/aktivgroteskcorp-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'aktiv_grotesk_corpMdIt';
+    src: url('fonts/aktivgroteskcorp-mediumitalic-webfont.woff2') format('woff2'),
+         url('fonts/aktivgroteskcorp-mediumitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'aktiv_grotesk_corpregular';
+    src: url('fonts/aktivgroteskcorp-regular-webfont.woff2') format('woff2'),
+         url('fonts/aktivgroteskcorp-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
