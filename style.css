@@ -3,24 +3,58 @@
 /* /////////////////////////////// IRINA ARG ///////////////////////////////*/
 /* /////////////////////////////// IRINA ARG ///////////////////////////////*/
 
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< PAGE 1 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 body {
 	margin: 0;
 	padding: 0;
 	background-color: black;
+	cursor: none;
 }
 
-/*//// Navbar ////*/
+/*/////////////////////////////// CURSEUR /////////////////////////////// */
+#mouse-pointer {
+	position: fixed;
+	width: 30px;
+	height: 30px;
+	border: 2px solid #448AF7;
+	border-radius: 50%;
+	background-color: #448AF7;
+	mix-blend-mode: luminosity;
+	pointer-events: none;
+	z-index: 9999;
+  }
+
+/*/////////////////////////////// COULEURS /////////////////////////////// */
+h1, h2, h3, h4, p, nav, header{
+	color:#fff;
+}
+/*/////////////////////////////// FONTS /////////////////////////////// */
+h1, h2, h3, h4, p{
+	font-family: 'aktiv_grotesk_exregular', 'Times New Roman', Times, serif, sans-serif;
+}
+.bold{
+	font-family: 'aktiv_grotesk_exxbold','Times New Roman', Times, serif, sans-serif;
+}
+.bold-underline{
+	font-family: 'aktiv_grotesk_exxbold','Times New Roman', Times, serif, sans-serif;
+	text-decoration: underline;
+}
+
+/*/////////////////////////////// NAVBAR ///////////////////////////////*/
 nav {
 	align-items: center;
 	padding: 2rem;
-	color: #fff;
-	font-family: 'aktiv_grotesk_corpbold', 'Times New Roman', Times, serif, sans-serif;
+	font-family: 'aktiv_grotesk_exregular', 'Times New Roman', Times, serif, sans-serif;
 }
 
 .nav-links {
 	display: flex;
 	justify-content: space-between;
 	width: 50%;
+}
+.nav-links-1 {
+	font-family: 'aktiv_grotesk_exxbold','Times New Roman', Times, serif, sans-serif;
 }
 
 .nav-links li {
@@ -44,57 +78,33 @@ nav {
 	padding: 1rem;
 }
 
-/*//// Colonnes ////*/
-#hero{
-	display: flex;
-	margin-right:auto;
-	margin-left:auto;
-}
-
-.col1{
-
-}
-.col2{
-
-}
-.col3{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	margin-top:10vh;
-}
-
-/*//// Body ////*/
+/*/////////////////////////////// HEADER ///////////////////////////////*/
 header {
 	background: linear-gradient(180deg, #101010, #202020);
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	height: 100vh;
-	color: white;
+	border-bottom: 2px solid #fff;
 }
-header .poster{
-	width: 50%;
 
-}
 header h1{
-	font-family: 'aktiv_grotesk_corpbold', 'Times New Roman', Times, serif, sans-serif;
-	font-size:6rem;
-	margin-top:0px;
-	line-height: 10rem;
+	font-family: 'aktiv_grotesk_exxbold', 'Times New Roman', Times, serif, sans-serif;
+	font-size:148px;
+	margin-top:10px;
+	margin-bottom:0px;
+	line-height: 7rem;
+	text-transform: uppercase;
 }
 
-.bubble{
-	margin-top:90px;
-	position: relative;
-	bottom:0px;
-	display:flex;
-	flex-direction: column;
+header span{
+	font-family: 'aktiv_grotesk_corpregular', 'Times New Roman', Times, serif, sans-serif;
 }
 
-.bubble p{
-	font-size:11px;
-	font-family:'aktiv_grotesk_corpbold', 'Times New Roman', Times, serif, sans-serif;
+header p{
+	padding-left:10px;
+	font-size: 11px;
+	font-family: 'aktiv_grotesk_exregular', 'Times New Roman', Times, serif, sans-serif;
 }
 
 #sidebar{
@@ -129,108 +139,296 @@ header h1{
 	margin-left: 1.3rem;
 }
 	
-.button1 {
+.button-img {
 	width:50px;
 	height:50px;
 	border-radius:10px;
 	background-color: #448AF7;
 	text-decoration: none;
-	margin-top:10vh;
 }
-.button2 {
+.button1 {
 	padding: 10px 20px;
 	background-color: transparent;
 	color: white;
 	border: none;
 	border-radius: 5px;
 	font-size: 1.2em;
-	font-family:'aktiv_grotesk_corpbold', 'Times New Roman', Times, serif;
+	font-family:'aktiv_grotesk_exregular', 'Times New Roman', Times, serif;
 }
 
-main {
+/*/////////////////////////////// HERO ///////////////////////////////*/
+#hero{
+	display:flex;
+}
+.col1 img{
+	width:25rem;
+}
+.col1{
+	align-self: center;
+}
+.col2{
+	text-align:center;
+}
+.col2 img{
+	width:90%;
+}
+.col3{
 	display: flex;
-	flex-wrap: wrap;
+	flex-direction: column;
+	align-items: center;
+	margin-top:2.2rem;
+}
+.col3 button{
+	border:none;
+}
+
+/*/////////////////////////////// MAIN ///////////////////////////////*/
+
+
+main h2{
+	font-size: 48px;
+	margin-left: 15vw;
+
+}
+.container1{
+	padding: 0px 15vw 0px 15vw;
+}
+.container2{
+	padding: 0px 27vw 0px 27vw;
+}
+.container1, .container2{
+	display:flex;
+	justify-content: space-around;
+	text-align: center;
+}
+.container2{
+	margin-top:4.5rem;
+	margin-bottom:4.5rem;
+}
+.bloc1, .bloc2, .bloc3, .bloc4, .bloc5{
+	background-color: #202020;
+	width:180px;
+	height:120px;
+	border-radius:10px;
+	padding:5rem;
+}
+
+/*/////////////////////////////// BARRE DEFILEMENT ///////////////////////////////*/ 
+
+.container3{
+	border-top:2px solid #fff;
+	border-bottom:2px solid #fff;
+	color: #fff;
+	font-size: 48px;
+	font-weight: bold;
+	text-align: center;
 	justify-content: center;
-	padding: 50px;
-	border-top: 2px solid white;
-	border-bottom: 2px solid white;
+	align-items: center;
+	overflow: hidden;
+	font-family: 'aktiv_grotesk_exregular', 'Times New Roman', Times, serif, sans-serif;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 999;
+	align-self: center;
+}
+.marquee {
+	display: inline-block;
+	white-space: nowrap;
+	animation: marquee 20s linear infinite;
+	z-index: 9999;
+  }
+  
+  .marquee span {
+	display: inline-block;
+	padding-left: 10%;
+	animation: marquee-slide 20s linear infinite;
+  }
+  
+
+  
+  @keyframes marquee {
+	from {
+	  transform: translateX(0);
+	}
+	to {
+	  transform: translateX(-100%);
+	}
+  }
+  
+  @keyframes marquee-slide {
+	from {
+	  transform: translateX(0);
+	}
+	to {
+	  transform: translateX(-100%);
+	}
+  }
+  
+  @media screen and (max-width: 768px) {
+	.bandeau {
+	  height: auto;
+	  line-height: 1.5;
+	}
+	.marquee span {
+	  padding-left: 50%;
+	}
+  }
+
+/*/////////////////////////////// COMMANDEZ VOTRE PASS ///////////////////////////////*/
+.container4{
+	min-height:100vh;
+	display:flex;
+	flex-direction: row;
+	background-image: url(img/background.png);
+	background-size: cover;
+	background-position: center;
 }
 
-section {
-	color:#fff;
-	flex-basis: 100%;
-	padding: 20px;
+.col4{
+	width:50%;
+	align-self: center;
 }
 
+input[type="text"], input[type="email"], input[type="number"], input[type="fname"], input[type="rue"], input[type="ville"], input[type="ville"] {
+	padding: 10px;
+	border-radius: 5px;
+	border: none;
+	margin-top: 10px;
+}
+
+input[type="submit"] {
+	background-color: #448AF7;
+	color: white;
+	padding: 10px 60px 10px 60px;
+	border-radius: 6px;
+	border: none;
+	cursor: pointer;
+	margin-top: 30px;
+}
+.col5{
+	text-align: center;
+	width:50%;
+	align-self: center;
+}
+form{
+	display: inline-grid;
+	border-radius:10px;
+	padding:2rem;
+	background-color: #333333;
+	margin:6rem;
+}
+
+/*/////////////////////////////// FOOTER ///////////////////////////////*/
 footer {
 	background-color: black;
 	color: black;
 	text-align: center;
 	padding: 20px;
+	border-top:2px solid #fff;
 }
 
-/*//// Fonts ////*/
+/*/////////////////////////////// FONTS ///////////////////////////////*/
 @font-face {
-    font-family: 'aktiv_grotesk_corpbold';
-    src: url('fonts/aktivgroteskcorp-bold-webfont.woff2') format('woff2'),
-         url('fonts/aktivgroteskcorp-bold-webfont.woff') format('woff');
+    font-family: 'aktiv_grotesk_exregular';
+    src: url('fonts/aktiv_grotesk_ex-webfont.woff2') format('woff2'),
+         url('fonts/aktiv_grotesk_ex-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
 }
 @font-face {
-    font-family: 'aktiv_grotesk_corpitalic';
-    src: url('aktivgroteskcorp-italic-webfont.woff2') format('woff2'),
-         url('aktivgroteskcorp-italic-webfont.woff') format('woff');
+    font-family: 'aktiv_grotesk_exxbold';
+    src: url('fonts/aktiv_grotesk_ex_xbold-webfont.woff2') format('woff2'),
+         url('fonts/aktiv_grotesk_ex_xbold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
 }
-@font-face {
-    font-family: 'aktiv_grotesk_corpbold_italic';
-    src: url('fonts/aktivgroteskcorp-bolditalic-webfont.woff2') format('woff2'),
-         url('fonts/aktivgroteskcorp-bolditalic-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
 
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< PAGE 2 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+.chargement{
+	margin:10rem;
 }
-@font-face {
-    font-family: 'aktiv_grotesk_corpLtIt';
-    src: url('fonts/aktivgroteskcorp-lightitalic-webfont.woff2') format('woff2'),
-         url('fonts/aktivgroteskcorp-lightitalic-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+.loading-container {
+	position: relative;
+	width: 50%;
+	margin: 3rem; 
+	border-radius: 4px;
+	box-sizing: border-box;
+	box-shadow: 0 10px 20px rgba(0, 0, 0, .5);
+  }
+  
+  .Loading {
+	position: relative;
+	display: inline-block;
+	width: 100%;
+	height: 10px;
+	background: #f1f1f1;
+	box-shadow: inset 0 0 5px rgba(0, 0, 0, .2);
+	border-radius: 4px;
+	overflow: hidden;
+  }
+  
+  .Loading:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	width: 0;
+	height: 100%;
+	border-radius: 4px;
+	box-shadow: 0 0 5px rgba(0, 0, 0, .2);
+	animation: load 5s infinite;
+  }
+  
+  @keyframes load {
+	0% {
+	  width: 0;
+	  background: #448AF7;
+	}
+	
+	25% {
+	  width: 40%;
+	  background: #a0d2eb;
+	}
+	
+	50% {
+	  width: 60%;
+	  background: #448AF7;
+	}
+	
+	75% {
+	  width: 75%;
+	  background: #d0bdf4;
+	}
+	
+	100% {
+	  width: 100%;
+	  background: #448AF7;
+	}
+  }
+  
+  @keyframes pulse {
+	0% {
+	  background: #a28089;
+	}
+	
+	25% {
+	  background: #a0d2eb;
+	}
+	
+	50% {
+	  background: #ffa8b6;
+	}
+	
+	75% {
+	  background: #d0bdf4;
+	}
+	
+	100% {
+	  background: #494d5f;
+	}
+  }
 
-}
-@font-face {
-    font-family: 'aktiv_grotesk_corplight';
-    src: url('fonts/aktivgroteskcorp-light-webfont.woff2') format('woff2'),
-         url('fonts/aktivgroteskcorp-light-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+/*/////////////////////////////// END ///////////////////////////////*/
 
-}
-@font-face {
-    font-family: 'aktiv_grotesk_corpmedium';
-    src: url('fonts/aktivgroteskcorp-medium-webfont.woff2') format('woff2'),
-         url('fonts/aktivgroteskcorp-medium-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-@font-face {
-    font-family: 'aktiv_grotesk_corpMdIt';
-    src: url('fonts/aktivgroteskcorp-mediumitalic-webfont.woff2') format('woff2'),
-         url('fonts/aktivgroteskcorp-mediumitalic-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-@font-face {
-    font-family: 'aktiv_grotesk_corpregular';
-    src: url('fonts/aktivgroteskcorp-regular-webfont.woff2') format('woff2'),
-         url('fonts/aktivgroteskcorp-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}

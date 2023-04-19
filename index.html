@@ -6,10 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Irina</title>
     <link href="style.css" rel="stylesheet">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
 	<script src="script.js"></script>
 </head>
 <body>	
-
+	<!-- POINTER SOURIS -->
+	<div id="mouse-pointer"></div>
+	<!-- BARRE RESEAUX SOCIAUX -->
 	<div id="sidebar">
 		<a href=""><img src="img/twitch.svg"></a>
 		<a href=""><img src="img/twitter.svg"></a>
@@ -21,18 +25,16 @@
 			<ul class="nav-links">
 			  <li><a href="#">News</a></li>
 			  <li><a href="#">Tchat</a></li>
-			  <li><a href="#">Commencer</a></li>
+			  <li class="nav-links-1"><a href="chargement.html">Commencer</a></li>
 			</ul>
 		</nav>
 
 		<div id="hero">
 			<div class="col1">
 				<!-- titre + bulles discution -->
-				<div class="bubble">
 					<img src="img/bubble.svg">
 					<h1>Irina</h1>
-					<p>En collaboration avec RATP.fr et Ile-de-France Mobilités.</p>
-				</div>
+					<p>En collaboration avec <span class="bold">RATP.fr</span> et <span class="bold">Ile-de-France Mobilités.</span></p>
 			</div>
 				<!-- fin -->
 			<div class="col2">
@@ -41,18 +43,85 @@
 		</div>
 		
 		<div class="col3">
-			<button class="button1"><img src="img/arrow.svg"></button>
-			<button class="button2">Commence à jouer</button>
+			<a href="chargement.html"><button class="button-img"><img src="img/arrow.svg"></button></a>
+			<button class="button1">Commencer à <span class="bold">jouer</span></button>
 		</div>
 	</header>
 
 	<main>
+		<!-- Comment jouer avec Irina? -->
+		<h2>Comment jouer avec <span class="bold">Irina?</span></h2>
+
+		<div class="container1">
+			<div class="bloc1">
+				<p>1. Commandez votre <span class="bold">Pass Irina</span></p>
+				<img src="img/svg1.svg" alt="commande Irina">
+			</div>
+			<div class="bloc2">
+				<p>2. Commencez à <span class="bold">jouer</span></p>
+				<img src="img/svg2.svg" alt="jouer au jeu">
+			</div>
+			<div class="bloc3">
+				<p>3. Trouvez les <span class="bold">check-point Irina</span></p>
+				<img src="img/svg3.svg" alt="points NFC Irina">
+			</div>
+		</div>
+		<div class="container2">
+			<div class="bloc4">
+				<p>4. Posez votre Pass sur les <span class="bold">points NFC pour continuer</span></p>
+				<img src="img/svg4.svg" alt="contact NFC Irina">
+			</div>
+			<div class="bloc5">
+				<p>5. <span class="bold">Utilisez votre Pass</span> pour avancer dans le jeu</p>
+				<img src="img/svg5.svg" alt="avancez dans l'aventure Irina" Irina">
+			</div>
+		</div>
+
+		<!-- Barre de défilement -->
+
+		<div class="container3">
+			<h2>
+				<div class="marquee">
+					<span>Votre pass <a class="bold-underline">gratuit</a> dès maintenant !</span>
+					<span>Votre pass <a class="bold-underline">gratuit</a> dès maintenant !</span>
+					<span>Votre pass <a class="bold-underline">gratuit</a> dès maintenant !</span>
+				</div>
+			</h2>
+		</div>
+		  
+
+		<!-- Commandez votre pass gratuit! -->
+
+		
+		<div class="container4">
+
+				<div class="col4">
+					<h2>
+						Commandez votre<span class="bold"> pass gratuitement!</span>
+					</h2>
+				</div>
+				<div class="col5">
+					<form>
+						<input type="text" id="fname" name="firstname" placeholder="Votre nom et prénom" required>
+					
+						<input type="email" id="email" name="email" placeholder="Email" required>
+					
+						<input type="text" id="rue" name="rue" placeholder="Rue" required>
+					
+						<input type="text" id="ville" name="ville" placeholder="Ville" required>
+					
+						<input type="number" id="code-postal" name="code-postal" placeholder="Code-postal" required>
+
+						<input type="submit" value="Envoyer">
+					</form>
+				</div>
+		</div>
 	</main>
+	  
 
 	<footer>
-		<p>IRINA 2023</p>
+		<p><span class="bold">IRINA</span>© 2023</p>
 	</footer>
-
 </body>
 
 </html>
