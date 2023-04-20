@@ -529,11 +529,17 @@ footer {
 	background-color:#448AF7;
 	color: white;
 	border: none;
-	border-radius: 20px;
-	font-size: 1.2em;
+	border-radius: 15px;
+	font-size: 0;
 	font-family:'aktiv_grotesk_exregular', 'Times New Roman', Times, serif;
 }
-canvas { background: #eee; }
+#sidebar a:nth-child(1){
+	margin-left: 0.9rem;
+	margin-bottom: 1.2rem;
+}
+canvas {
+	background: #eee;
+}
 
 /*/////////////////////////////// FONTS ///////////////////////////////*/
 @font-face {
