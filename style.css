@@ -328,7 +328,7 @@ footer {
 	padding: 20px;
 	border-top:2px solid #fff;
 }
-/*/////////////////////////////// RESPONSIVE ///////////////////////////////*/
+/*/////////////////////////////// RESPONSIVE 968px ///////////////////////////////*/
 @media screen and (max-width: 968px) {
 	/* /// HERO /// */
 	#hero {
@@ -375,6 +375,60 @@ footer {
 	.container1, .container2{
 		margin-top:0;
 		padding: 0px 25vw 0px 25vw;
+	}
+		
+}
+/*/////////////////////////////// RESPONSIVE 414px ///////////////////////////////*/
+@media screen and (max-width: 414px) {
+	body{
+		overflow-x: hidden;
+	}
+	main h2{
+		font-size: 30px;
+		margin-left: 21vw;
+	}
+	/* /// SIDEBAR /// */
+	.col1 img {
+		width: 12rem;
+		padding-left: 5.7rem;
+	}
+
+	/* /// MENU /// */
+	.nav-links a {
+		font-size: 1.0rem;
+	}
+
+	/* /// HEADER /// */
+	header h1{
+		text-align: center;
+		font-size: 60px;
+		line-height: 1.6rem;
+	}
+	header p{
+		text-align: center;
+		padding: 10px 100px 0px 100px;
+	}
+
+	.col2 img{
+		width: 67%;
+	}
+	.button1{
+		font-size:16px;
+	}
+	/* /// MAIN ///*/
+	.bloc1, .bloc2, .bloc3, .bloc4, .bloc5{
+		padding: 2.3rem;
+	}
+	form{
+		margin: 4rem;
+	}
+	input[type="text"], input[type="email"], input[type="number"], input[type="fname"], input[type="rue"], input[type="ville"], input[type="ville"]{
+		width: 200px;
+		
+	}
+	.container1, .container2{
+		padding: 0px 0vw 0px 2vw;
+		align-items: center;
 	}
 		
 }
