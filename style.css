@@ -327,26 +327,15 @@ footer {
 	padding: 20px;
 	border-top:2px solid #fff;
 }
+/*/////////////////////////////// RESPONSIVE ///////////////////////////////*/
 
-/*/////////////////////////////// FONTS ///////////////////////////////*/
-@font-face {
-    font-family: 'aktiv_grotesk_exregular';
-    src: url('fonts/aktiv_grotesk_ex-webfont.woff2') format('woff2'),
-         url('fonts/aktiv_grotesk_ex-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
 
-}
-@font-face {
-    font-family: 'aktiv_grotesk_exxbold';
-    src: url('fonts/aktiv_grotesk_ex_xbold-webfont.woff2') format('woff2'),
-         url('fonts/aktiv_grotesk_ex_xbold-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
 
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< PAGE 2 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+.col1-2{
+	margin:15rem;
+}
+
 .chargement{
 	margin:10rem;
 }
@@ -399,7 +388,7 @@ footer {
 	
 	75% {
 	  width: 75%;
-	  background: #d0bdf4;
+	  background: #a0d2eb;
 	}
 	
 	100% {
@@ -410,7 +399,7 @@ footer {
   
   @keyframes pulse {
 	0% {
-	  background: #a28089;
+	  background: #448AF7;
 	}
 	
 	25% {
@@ -418,17 +407,48 @@ footer {
 	}
 	
 	50% {
-	  background: #ffa8b6;
+	  background: #448AF7;
 	}
 	
 	75% {
-	  background: #d0bdf4;
+	  background: #a0d2eb;
 	}
 	
 	100% {
-	  background: #494d5f;
+	  background: #448AF7;
 	}
   }
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< PAGE 3 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+.button-img-page2 {
+	width:60px;
+	height:60px;
+	background-color:#448AF7;
+	color: white;
+	border: none;
+	border-radius: 20px;
+	font-size: 1.2em;
+	font-family:'aktiv_grotesk_exregular', 'Times New Roman', Times, serif;
+}
+canvas { background: #eee; }
+
+/*/////////////////////////////// FONTS ///////////////////////////////*/
+@font-face {
+    font-family: 'aktiv_grotesk_exregular';
+    src: url('fonts/aktiv_grotesk_ex-webfont.woff2') format('woff2'),
+         url('fonts/aktiv_grotesk_ex-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'aktiv_grotesk_exxbold';
+    src: url('fonts/aktiv_grotesk_ex_xbold-webfont.woff2') format('woff2'),
+         url('fonts/aktiv_grotesk_ex_xbold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
 
 /*/////////////////////////////// END ///////////////////////////////*/
 
