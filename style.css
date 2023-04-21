@@ -33,13 +33,6 @@ body {
 	font-weight: bold;
 	text-align: center;
 }
-.transition.arduino a img{
-	margin:20rem;
-	width:300px;
-}
-.transition.arduino.two a img{
-	margin:30rem;
-}
 /*/////////////////////////////// COULEURS /////////////////////////////// */
 h1, h2, h3, h4, p, nav, header{
 	color:#fff;
@@ -574,6 +567,15 @@ footer {
 #sidebar-quit a:nth-child(1){
 	margin-left: 0.9rem;
 	margin-bottom:1rem;
+}
+
+.arduino.two a img{
+	margin-top: 10rem;
+	width: 400px;
+}
+.arduino.tree a img{
+	margin-top: 26rem;
+	width: 400px;
 }
 
 /*/////////////////////////////// FONTS ///////////////////////////////*/
