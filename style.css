@@ -24,7 +24,22 @@ body {
 	pointer-events: none;
 	z-index: 9999;
   }
-
+/*/////////////////////////////// TRANSITION /////////////////////////////// */
+.transition {
+	display: flex;
+	align-items: center;
+	color: white;
+	font-size: 24px;
+	font-weight: bold;
+	text-align: center;
+}
+.transition.arduino a img{
+	margin:20rem;
+	width:300px;
+}
+.transition.arduino.two a img{
+	margin:30rem;
+}
 /*/////////////////////////////// COULEURS /////////////////////////////// */
 h1, h2, h3, h4, p, nav, header{
 	color:#fff;
@@ -533,12 +548,32 @@ footer {
 	font-size: 0;
 	font-family:'aktiv_grotesk_exregular', 'Times New Roman', Times, serif;
 }
-#sidebar a:nth-child(1){
-	margin-left: 0.9rem;
-	margin-bottom: 1.2rem;
+#sidebar-quit{
+	position:fixed;
+	display: flex;
+	flex-direction: column;
+	top:0px;
+	background: linear-gradient(180deg, #101010, #202020);
+	width:90px;
+	bottom: 0;
+	left: 0;
+	border-right: 2px solid white;
+	z-index: 999;
+	vertical-align: top;
+	padding-top:30px;
 }
-canvas {
-	background: #eee;
+
+#sidebar-quit a{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	margin-bottom:1rem;
+	margin-left: 1.3rem;
+}
+
+#sidebar-quit a:nth-child(1){
+	margin-left: 0.9rem;
+	margin-bottom:1rem;
 }
 
 /*/////////////////////////////// FONTS ///////////////////////////////*/
